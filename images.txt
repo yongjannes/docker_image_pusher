@@ -1,21 +1,21 @@
 # ====================== Linux 原生镜像 ======================
 # x86_64/amd64 架构（Intel/AMD CPU，普通PC/服务器）
---platform linux/amd64 nginx        # x86架构的Nginx服务器
---platform linux/amd64 mysql        # x86架构的MySQL数据库
---platform linux/amd64 redis        # x86架构的Redis缓存
---platform linux/amd64 openjdk      # x86架构的OpenJDK Java环境
---platform linux/amd64 rabbitmq     # x86架构的RabbitMQ消息队列
+docker pull --platform linux/amd64 nginx:latest        # x86架构的Nginx服务器
+docker pull --platform linux/amd64 mysql:latest        # x86架构的MySQL数据库
+docker pull --platform linux/amd64 redis:latest        # x86架构的Redis缓存
+docker pull --platform linux/amd64 openjdk:latest      # x86架构的OpenJDK Java环境
+docker pull --platform linux/amd64 rabbitmq:latest     # x86架构的RabbitMQ消息队列
 
 # ARM64 架构（苹果M1/M2/树莓派4+/AWS Graviton等）
---platform linux/arm64 nginx        # ARM64架构的Nginx服务器
---platform linux/arm64 mysql        # ARM64架构的MySQL数据库
---platform linux/arm64 redis        # ARM64架构的Redis缓存
---platform linux/arm64 openjdk      # ARM64架构的OpenJDK Java环境
---platform linux/arm64 rabbitmq     # ARM64架构的RabbitMQ消息队列
+docker pull --platform linux/arm64 nginx:latest        # ARM64架构的Nginx服务器
+docker pull --platform linux/arm64 mysql:latest        # ARM64架构的MySQL数据库
+docker pull --platform linux/arm64 redis:latest        # ARM64架构的Redis缓存
+docker pull --platform linux/arm64 openjdk:latest      # ARM64架构的OpenJDK Java环境
+docker pull --platform linux/arm64 rabbitmq:latest     # ARM64架构的RabbitMQ消息队列
 
 # ====================== Windows 镜像 ======================
---platform windows/amd64 nginx      # Windows x64架构的Nginx服务器
---platform windows/amd64 mysql      # Windows x64架构的MySQL数据库
---platform windows/amd64 redis      # Windows x64架构的Redis缓存
---platform windows/amd64 openjdk    # Windows x64架构的OpenJDK Java环境
---platform windows/amd64 rabbitmq   # Windows x64架构的RabbitMQ消息队列
+docker pull --platform windows/amd64 nginx:latest      # Windows x64架构的Nginx服务器
+docker pull --platform windows/amd64 mysql:latest      # Windows x64架构的MySQL数据库
+docker pull --platform windows/amd64 redis:latest      # Windows x64架构的Redis缓存
+docker pull --platform windows/amd64 openjdk:latest    # Windows x64架构的OpenJDK Java环境
+docker pull --platform windows/amd64 rabbitmq:latest   # Windows x64架构的RabbitMQ消息队列
