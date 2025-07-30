@@ -3,3 +3,4 @@ mysql
 redis
 openjdk
 rabbitmq
+openjdk:17
