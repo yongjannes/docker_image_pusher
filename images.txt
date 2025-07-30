@@ -1,6 +1,21 @@
-nginx
-#支持私库
-k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
-xhofe/alist:latest
-#支持指定架构
---platform=linux/arm64 xiaoyaliu/alist
+# ====================== Linux 原生镜像 ======================
+# x86_64/amd64 架构（Intel/AMD CPU，普通PC/服务器）
+--platform linux/amd64 nginx        # x86架构的Nginx服务器
+--platform linux/amd64 mysql        # x86架构的MySQL数据库
+--platform linux/amd64 redis        # x86架构的Redis缓存
+--platform linux/amd64 openjdk      # x86架构的OpenJDK Java环境
+--platform linux/amd64 rabbitmq     # x86架构的RabbitMQ消息队列
+
+# ARM64 架构（苹果M1/M2/树莓派4+/AWS Graviton等）
+--platform linux/arm64 nginx        # ARM64架构的Nginx服务器
+--platform linux/arm64 mysql        # ARM64架构的MySQL数据库
+--platform linux/arm64 redis        # ARM64架构的Redis缓存
+--platform linux/arm64 openjdk      # ARM64架构的OpenJDK Java环境
+--platform linux/arm64 rabbitmq     # ARM64架构的RabbitMQ消息队列
+
+# ====================== Windows 镜像 ======================
+--platform windows/amd64 nginx      # Windows x64架构的Nginx服务器
+--platform windows/amd64 mysql      # Windows x64架构的MySQL数据库
+--platform windows/amd64 redis      # Windows x64架构的Redis缓存
+--platform windows/amd64 openjdk    # Windows x64架构的OpenJDK Java环境
+--platform windows/amd64 rabbitmq   # Windows x64架构的RabbitMQ消息队列
