@@ -4,3 +4,4 @@ redis
 openjdk
 rabbitmq
 openjdk:17
+minio/minio
