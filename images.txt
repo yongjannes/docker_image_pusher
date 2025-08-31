@@ -10,3 +10,4 @@ rabbitmq:3.12.0-management
 openjdk:17
 minio/minio
 nacos/nacos-server:v2.1.1
+gitlab/gitlab-runner
